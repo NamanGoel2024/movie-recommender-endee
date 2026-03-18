@@ -44,30 +44,38 @@ movie-recommender-endee/
 ├── ingest.py           ← loads movies into Endee
 ├── recommend.py        ← recommendation engine
 ├── setup.py            ← one command setup script
+├── run.bat             ← double click to run on Windows
+├── run.sh              ← double click to run on Linux/Mac
 ├── requirements.txt    ← Python dependencies
 └── README.md           ← project documentation
 ```
 
-## 🚀 Quick Start (One Command)
+## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.x installed
 - Docker installed and running
 
-### Run
+### ▶️ Windows Users
+1. Install Python from https://www.python.org
+2. Install Docker Desktop from https://www.docker.com/products/docker-desktop
+3. Clone the repo
+4. Double click `run.bat`
+
+### ▶️ Linux / Mac Users
+1. Install Python and Docker
+2. Clone the repo
+3. Double click `run.sh` or run in terminal:
+```bash
+bash run.sh
+```
+
+### ▶️ Terminal (All platforms)
 ```bash
 git clone https://github.com/NamanGoel2024/movie-recommender-endee.git
 cd movie-recommender-endee
 python3 setup.py
 ```
-
-That's it! setup.py will automatically:
-- ✅ Check Docker is installed
-- ✅ Start Endee database
-- ✅ Create virtual environment
-- ✅ Install all dependencies
-- ✅ Load movies into Endee
-- ✅ Launch the recommender
 
 ## 📖 Manual Setup (Alternative)
 
@@ -109,6 +117,7 @@ python3 recommend.py
 - 📊 Similarity percentage — shows how close each match is
 - ⌨️ Interactive mode — type any query and get instant results
 - 🛡️ Handles typos — AI model understands misspelled queries
+- 🖱️ Double click to run — no terminal knowledge needed
 
 ## 📊 Dataset
 40 movies across genres including Sci-Fi, Thriller, Drama, Crime, Horror and Action.
